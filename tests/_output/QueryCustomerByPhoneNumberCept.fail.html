@@ -1,0 +1,116 @@
+	<!DOCTYPE html>
+	<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<title>Create Test</title>
+		<link href="/clone/web/assets/ec4868f8/css/bootstrap.css" rel="stylesheet">
+<link href="/clone/web/assets/3d4ff4d/css/main.css" rel="stylesheet">		<meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="d05FSElZLVQOG3ItezNJER8mcDkeE2cHACAzAgZpWBERFiM4cBJjIA==">
+	</head>
+	<body>
+
+				<div id="header">
+			<!--<div class="authorization-indicator">
+								    <span>guest</span>				    <a href="/clone/web/site/login">login</a>							</div>-->
+			<ul id="w1" class="nav-tabs nav"><li><a href="/clone/web/container/index">Срезы</a></li>
+<li><a href="/clone/web/site/index">Главная</a></li>
+<li><a href="/clone/web/statistic/index">Статистика</a></li>
+<li><a href="/clone/web/grafic/index">Графики</a></li>
+<li><a class="login" href="/clone/web/site/login">Вход</a></li></ul>		</div>
+		<div class="container">
+		    <div class="test-create">
+
+    <h1>Create Test</h1>
+
+    
+<div class="test-form">
+
+    <form id="w0" action="/clone/web/tests/create?relation_id=1" method="post">
+<input type="hidden" name="_csrf" value="d05FSElZLVQOG3ItezNJER8mcDkeE2cHACAzAgZpWBERFiM4cBJjIA==">
+    <div class="form-group field-test-course required">
+<label class="control-label">Курс</label>
+<input type="hidden" name="Test[course]" value=""><div id="test-course" aria-required="true"><label><input type="radio" name="Test[course]" value="1"> 1</label>
+<label><input type="radio" name="Test[course]" value="2"> 2</label>
+<label><input type="radio" name="Test[course]" value="3"> 3</label>
+<label><input type="radio" name="Test[course]" value="4"> 4</label></div>
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-specialty_id required">
+<label class="control-label" for="test-specialty_id">Спциальность</label>
+<input type="text" id="test-specialty_id" class="form-control" name="Test[specialty_id]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-groupnumber required">
+<label class="control-label" for="test-groupnumber">Номер группы</label>
+<input type="text" id="test-groupnumber" class="form-control" name="Test[groupNumber]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-teachername required">
+<label class="control-label" for="test-teachername">Преподаватель</label>
+<input type="text" id="test-teachername" class="form-control" name="Test[teacherName]" placeholder="Педров П.П." aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-subject required">
+<label class="control-label" for="test-subject">Дисциплина</label>
+<input type="text" id="test-subject" class="form-control" name="Test[subject]" placeholder="Математика" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-allstudents required">
+<label class="control-label" for="test-allstudents">Всего студентов</label>
+<input type="text" id="test-allstudents" class="form-control" name="Test[allStudents]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-completestudents required">
+<label class="control-label" for="test-completestudents">Студентов выполнило</label>
+<input type="text" id="test-completestudents" class="form-control" name="Test[completeStudents]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-markfive required">
+<label class="control-label" for="test-markfive">Оценка "5"</label>
+<input type="text" id="test-markfive" class="form-control" name="Test[markFive]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-markfour required">
+<label class="control-label" for="test-markfour">Оценка "4"</label>
+<input type="text" id="test-markfour" class="form-control" name="Test[markFour]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-markthree required">
+<label class="control-label" for="test-markthree">Оценка "3"</label>
+<input type="text" id="test-markthree" class="form-control" name="Test[markThree]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-test-marktwo required">
+<label class="control-label" for="test-marktwo">Оценка "2"</label>
+<input type="text" id="test-marktwo" class="form-control" name="Test[markTwo]" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Создать</button>    </div>
+
+    </form>
+</div>
+
+</div>
+		    <div class="footer">Работает на <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></div>
+		</div>
+		<script src="/clone/web/assets/d220c137/jquery.js"></script>
+<script src="/clone/web/assets/496b35e9/yii.js"></script>
+<script src="/clone/web/assets/496b35e9/yii.validation.js"></script>
+<script src="/clone/web/assets/496b35e9/yii.activeForm.js"></script>
+<script src="/clone/web/assets/3d4ff4d/js/main.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#w0').yiiActiveForm([{"id":"test-course","name":"course","container":".field-test-course","input":"#test-course","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Курс»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Курс» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-specialty_id","name":"specialty_id","container":".field-test-specialty_id","input":"#test-specialty_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Спциальность»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Спциальность» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-groupnumber","name":"groupNumber","container":".field-test-groupnumber","input":"#test-groupnumber","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Номер группы»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Номер группы» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-teachername","name":"teacherName","container":".field-test-teachername","input":"#test-teachername","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Преподаватель»."});yii.validation.string(value, messages, {"message":"Значение «Преподаватель» должно быть строкой.","max":255,"tooLong":"Значение «Преподаватель» должно содержать максимум 255 символа.","skipOnEmpty":1});}},{"id":"test-subject","name":"subject","container":".field-test-subject","input":"#test-subject","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Предмет»."});yii.validation.string(value, messages, {"message":"Значение «Предмет» должно быть строкой.","max":255,"tooLong":"Значение «Предмет» должно содержать максимум 255 символа.","skipOnEmpty":1});}},{"id":"test-allstudents","name":"allStudents","container":".field-test-allstudents","input":"#test-allstudents","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Всего студентов»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Всего студентов» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-completestudents","name":"completeStudents","container":".field-test-completestudents","input":"#test-completestudents","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Выполнило студентов»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Выполнило студентов» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-markfive","name":"markFive","container":".field-test-markfive","input":"#test-markfive","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Оценка 5»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Оценка 5» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-markfour","name":"markFour","container":".field-test-markfour","input":"#test-markfour","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Оценка 4»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Оценка 4» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-markthree","name":"markThree","container":".field-test-markthree","input":"#test-markthree","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Оценка 3»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Оценка 3» должно быть целым числом.","skipOnEmpty":1});}},{"id":"test-marktwo","name":"markTwo","container":".field-test-marktwo","input":"#test-marktwo","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Оценка 2»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Оценка 2» должно быть целым числом.","skipOnEmpty":1});}}], []);
+});</script>	</body>
+	</html>

@@ -1,0 +1,16 @@
+{
+    "require": {
+        "codeception/codeception": " *",
+        "yiisoft/yii2": " *",
+        "yiisoft/yii2-gii": "*",
+        "twbs/bootstrap": "3.*",
+        "fzaninotto/faker": "*",
+        "phpoffice/phpword": "^0.13.0"
+    },
+    "extra": {
+	    "asset-installer-paths": {
+	        "npm-asset-library": "vendor/npm",
+	        "bower-asset-library": "vendor/bower"
+	    }
+    }
+}

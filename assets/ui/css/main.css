@@ -1,0 +1,20 @@
+.authorization-indicator {
+	float: right;
+	width: 25%;
+	text-align: right;
+}
+
+#header {
+	width: 100%;
+}
+.menu {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.menu li {
+	font-size: 2em;
+	padding-left: 12px;
+	font-family: "Times New Roman";
+	display: inline-block;
+}
